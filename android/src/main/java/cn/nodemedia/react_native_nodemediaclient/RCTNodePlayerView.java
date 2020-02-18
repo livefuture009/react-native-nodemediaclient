@@ -29,6 +29,7 @@ public class RCTNodePlayerView extends NodePlayerView implements LifecycleEventL
         context.addLifecycleEventListener(this);
         mNodePlayer = new NodePlayer(context, RCTNodeMediaClient.getPremium());
         mNodePlayer.setPlayerView(this);
+        mNodePlayer.setAudioEnable(false);
         mNodePlayer.setNodePlayerDelegate(new NodePlayerDelegate() {
             @Override
             public void onEventCallback(NodePlayer nodePlayer, int i, String s) {

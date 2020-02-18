@@ -26,6 +26,7 @@
     [_np setPlayerView:self];
     _autoplay = NO;
     _inputUrl = nil;
+    [_np setAudioEnable: false];
   }
   return self;
 }
